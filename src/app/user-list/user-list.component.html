@@ -1,0 +1,31 @@
+<p>
+  user-list works! {{name}}
+
+  <!-- <ul class="heroes">
+    <li *ngFor="let user of users">
+      <div>
+        <span>{{user.username}}</span><br>
+        <span>{{user.name}}</span><br>
+        <span>{{user.email}}</span>
+        <span>{{user.website}}</span>
+      </div>
+    </li>
+  </ul> -->
+
+
+
+</p>
+
+<ul class="heroes">
+  <li *ngFor="let hero of users">
+    <span class="badge">{{hero.id}}</span> {{hero.name}}
+  </li>
+</ul>
+
+
+<ul>
+  <li *ngFor="let hero of users2.data" (click) = "onSelect(hero)">
+    {{hero.first_name}}<br><img src={{hero.avatar}}>
+  </li>
+</ul>
+
